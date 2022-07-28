@@ -1,0 +1,5 @@
+ext {
+    compile_sdk = 32
+    target_sdk = 32
+    min_sdk = 30
+}
