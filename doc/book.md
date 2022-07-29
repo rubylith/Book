@@ -1,2 +1,2 @@
 code:
-git clone https://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@github.com/rubylith/Book.git
+git clone https://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@github.com/rubylith/Book.git
