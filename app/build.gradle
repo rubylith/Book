@@ -9,12 +9,12 @@ plugins {
 apply from: '../dependencies.gradle'
 
 android {
-    compileSdk compile_sdk
+    compileSdk rootProject.compileSdk
 
     defaultConfig {
         applicationId "com.fyl.book"
-        minSdk min_sdk
-        targetSdk target_sdk
+        minSdk rootProject.minSdk
+        targetSdk rootProject.targetSdk
         versionCode 1
         versionName "1.0"
 
@@ -38,6 +38,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
     }
 }
 

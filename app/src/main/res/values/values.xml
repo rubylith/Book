@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tct_alert_dialog_bg_color">#FFFFFF</color>
+    <color name="tct_alert_dialog_btn_bg_color">#EEF1F9</color>
+    <color name="tct_alert_dialog_divider_color">#24000000</color>
+    <color name="tct_stander_accent_primary">#4C72BF</color>
+    <color name="tct_stander_accent_primary_disable">#BBC9E7</color>
+    <color name="tct_stander_accent_primary_light">#80A0F2</color>
+    <color name="tct_stander_accent_primary_pressed">#365399</color>
+    <color name="tct_stander_bg_banner">#3380A0F2</color>
+    <color name="tct_stander_bg_basic">#F5F5F5</color>
+    <color name="tct_stander_bg_button_secondary">#1A80A0F2</color>
+    <color name="tct_stander_bg_button_secondary_pressed">#3380A0F2</color>
+    <color name="tct_stander_bg_layout">#F5F6F7</color>
+    <color name="tct_stander_bg_toast">#333333</color>
+    <color name="tct_stander_correct_normal">#43A047</color>
+    <color name="tct_stander_divider">#0D000000</color>
+    <color name="tct_stander_error">#B00020</color>
+    <color name="tct_stander_mask">#4D000000</color>
+    <color name="tct_stander_text_disabled">#CCCCCC</color>
+    <color name="tct_stander_text_primary">#212121</color>
+    <color name="tct_stander_text_secondary">#757575</color>
+    <color name="tct_stander_warning_normal">#FB8C00</color>
+    <style name="tclui_component_divider_horizontal_thick">
+        <item name="android:height">4dp</item>_
+        <item name="android:background">@color/tct_stander_divider</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <style name="tclui_component_divider_horizontal_thin">
+        <item name="android:height">1dp</item>_
+        <item name="android:background">@color/tct_stander_divider</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <style name="tclui_component_list_1line_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/tct_stander_text_primary</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+    </style>
+    <style name="tclui_component_menu_textview_subtitle">
+        <item name="android:textSize">14sp</item>_
+        <item name="android:textColor">@color/tct_stander_text_primary</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+    <style name="tclui_component_menu_textview_unchecked">
+        <item name="android:textSize">16sp</item>_
+        <item name="android:textColor">@color/tct_stander_text_primary</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    <style name="tclui_component_subtitle_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/tct_stander_text_secondary</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+</resources>

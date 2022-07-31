@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="androidx.navigation.Navigation"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/action_bar_height">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/action_bar_up"
+            android:layout_width="@dimen/action_bar_height"
+            android:layout_height="@dimen/action_bar_height"
+            android:src="@drawable/ic_action_bar_up"
+            android:contentDescription="@string/back"
+            android:foreground="?android:selectableItemBackgroundBorderless"
+            android:background="@color/windowBackground"
+            android:onClick="@{(v) -> Navigation.findNavController(v).navigateUp()}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/action_bar_title"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_title" />
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/action_bar_height"
+            app:layout_constrainedWidth="true"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:text="@string/app_name"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_goneMarginEnd="@dimen/action_bar_margin"
+            app:layout_goneMarginStart="@dimen/action_bar_margin"
+            app:layout_constraintStart_toEndOf="@id/action_bar_up"
+            app:layout_constraintEnd_toStartOf="@id/action_bar_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/action_bar_menu"
+            android:layout_width="@dimen/action_bar_height"
+            android:layout_height="@dimen/action_bar_height"
+            android:src="@drawable/ic_save"
+            android:contentDescription="@string/back"
+            android:foreground="?android:selectableItemBackgroundBorderless"
+            android:background="@color/windowBackground"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/action_bar_title"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
